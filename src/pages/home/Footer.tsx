@@ -10,6 +10,11 @@ export const Footer = () => {
   return (
     <VStack class="footer" w="$full" py="$4">
       <HStack spacing="$1">
+        <img 
+          src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" 
+          alt="Deploys by Netlify" 
+          style={{ height: "1em", verticalAlign: "middle" }}
+        />
         <Anchor href="https://github.com/alist-org/alist" external>
           {t("home.footer.powered_by")}
         </Anchor>
@@ -20,8 +25,6 @@ export const Footer = () => {
         >
           {t(UserMethods.is_guest(me()) ? "login.login" : "home.footer.manage")}
         </AnchorWithBase>
-        <span>|</span>
-        <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" />
       </HStack>
     </VStack>
   )
