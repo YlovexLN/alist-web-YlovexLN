@@ -20,6 +20,8 @@ export const Footer = () => {
         >
           {t(UserMethods.is_guest(me()) ? "login.login" : "home.footer.manage")}
         </AnchorWithBase>
+        <span>|</span>
+        <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" />
       </HStack>
     </VStack>
   )
